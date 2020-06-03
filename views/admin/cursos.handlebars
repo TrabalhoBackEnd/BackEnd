@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="text-center">
+        <h3>Lista de Cursos</h3>
+    </div>
+    <div >
+        
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Descricao</th>
+                    <th>Titulo</th>
+                    <th>Preco</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    {{#each cursos}}
+                        <th>{{this.titulo}}</th>
+                        <th>{{this.descricao}}</th>
+                        <th>{{this.preco}}</th>
+                    {{else}}
+
+                    {{/each}}
+                </tr>
+            </tbody>
+        </table>
+        <a href="cursos/add">
+            <button class="btn btn-success">Adicionar Curso</button>
+        </a>        
+    </div>
+</div>
